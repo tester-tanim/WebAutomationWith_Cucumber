@@ -1,0 +1,5 @@
+mvn test
+mvn test -D"cucumber.filter.tags=@sanity"
+mvn test -D"cucumber.filter.tags=not @sanity"
+mvn test -D"cucumber.filter.tags=@login and @sanity"
+mvn test -D"cucumber.filter.tags=@login or @sanity"
